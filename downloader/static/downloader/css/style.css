@@ -1,0 +1,188 @@
+
+body{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+/*    -webkit-filter: brightness(70%);
+    background: rgba(0, 0, 0, 0.3);
+*/
+}
+h1{
+    font-family: 'Roboto';
+    color: black;
+}
+header h1{
+    text-align: center;
+}
+header h3{
+    text-align: justify;
+}
+.main{
+    padding-top: 100px;
+}
+.centerContainer{
+    display: block;
+    margin: 0px auto;
+    width: 500px;
+}
+.logo{
+    margin: 0px auto;
+    width: 320px;
+    display: block;
+}
+.pet{
+    float: right;
+    line-height: 13px;
+    height: 50px;
+    width: 50px;
+    background: rgb(255, 44, 44);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 0px;
+}
+.pet span{
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+.centerContainer form{
+    display: block;
+}
+.centerContainer form span{
+    color: grey;
+} 
+.url{
+    width: 100%;
+    height: 44px;
+    line-height: 30px;
+    border: 1px solid rgb(255, 71, 71);
+    color: grey;
+    border-radius: 22px;
+    background: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.url:active,:focus,:hover{
+    outline: 0;
+}
+.btnContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+.btnContainer input{
+    font-family: 'Roboto';
+    width: 150px;
+    padding: 10px;
+    align-content: center;
+    background: rgb(255, 255, 255);
+    border: none;
+    color: black;
+    border-radius: 4px;
+    border-right: 3px solid rgb(255, 89, 89);
+    border-bottom: 3px solid rgb(255, 89, 89);
+}
+.btnContainer input:active{
+   
+    border-color:white;
+    margin: 0;
+}
+
+.btnContainer input:focus{
+    outline: none;
+}
+.centerContainer form p label{
+    display: none;
+}
+footer{
+    height: 30px;
+    width: 100vw;
+    color: grey;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    line-height: 10px;
+}
+footer .log{
+    float: left;
+    display: block;
+}
+footer span{
+    display: inline;
+    font-size: 10px;
+}
+.errorlist{
+    padding: 20px;
+    list-style: none;
+    color: rgb(255, 0, 0);
+    display: block;
+    margin: 0px;
+    font-size: 14px;
+    padding: 0;
+    text-align: center;
+}
+
+@media(max-width: 500px){
+    .centerContainer{
+        display: block;
+        margin: 0px auto;
+        width: 400px;
+    }
+    .logo{
+        margin: 0px auto;
+        width: 250px;
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .centerContainer{
+        display: block;
+        margin: 0px auto;
+        width: 320px;
+    }
+    .logo{
+        margin: 0px auto;
+        width: 230px;
+        display: block;
+    }
+    .url{
+        height: 40px;
+    }
+    .btnContainer input{
+        font-family: 'Roboto';
+        width: 140px;
+    }
+}
+@media(max-width: 320px){
+    .centerContainer{
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+    }
+    .logo{
+        margin: 0px auto;
+        width: 150px;
+        display: block;
+    }
+    .btnContainer input{
+        font-family: 'Roboto';
+        width: 120px;
+        padding: 5px;
+        font-size: 10px;
+    }
+    .pet{
+        line-height: 10px;
+        font-size: 7px;
+        height: 30px;
+        width: 30px;
+    }
+    .pet span{
+        font-size: 7px;
+        font-weight: bold;
+    }
+}

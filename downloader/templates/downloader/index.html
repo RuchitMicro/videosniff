@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Video Sniff is the best online YouTube to Mp4 converter. Convert and download your favourite YouTube video&#039;s into mp4 format.">
+	<meta name="keywords" content="YouTube, Converter, Fast, Convert YouTube to Mp4, Free YouTube to Mp4, YouTube video to Mp4, Converting YouTube to Mp4, YouTube to Mp4 free Converter, Videos to Mp4, YouTube to WEBM, YouTube to M4A, YouTube to 3GP" />
+	<meta name="author" content="Video Sniff" creator="ruchitmicro" />
+	<meta property="og:title" content="Youtube to MP4 Video MP3 Converter and Downloader" />	<meta property="og:description" content="Video Sniff is the best online YouTube to Mp4 converter. Convert and download your favourite YouTube video&#039;s for free in webm, mp4, and 3gp formats." />
+	<meta property="og:url" content="*Enter some link here" />
+	<meta property="og:image" content="*Enter some link here" />
+	<meta property="og:image:width" content="380" />
+	<meta property="og:image:height" content="380" />
+	<meta property="og:type" content="website" />
+
+
+    <title>YouTube Video Downloader | Download YoutTube for free in mp4</title>
+    {% load static %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'downloader/res/favicon.png' %}"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{%static 'downloader/js/pet.js'%}"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'downloader/css/style.css' %}" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <header>
+    </header>
+    <section class="main">
+        <div class="centerContainer">
+            <div class="logo">
+                <button class="pet"><i class="fas fa-paw"></i><br><span>PET</span></button>
+                <img src="{% static 'downloader/res/doglogowithlabel.png' %}" id='one' style="display:inline-block;" height="100%" width="100%">
+                <img src="{% static 'downloader/res/doglogowithlabelblush.png' %}" id='two' style="display:none;" height="100%" width="100%">
+                
+            </div>
+            <form method='POST'>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="btnContainer">
+                    <input type="submit" name="video" value="Download Video">
+                    <input type="submit" name="audio" value="Download Audio">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class='star review'></div>
+        <div class='log'>
+            <span>152 Downloads till now</span><br>
+            <span>14 people online</span>
+        </div>
+    </footer>
+</body>
+</html>
